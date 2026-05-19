@@ -1,16 +1,35 @@
-## Hi there 👋
+## Olá, sou o Tiago 👋
 
-<!--
-**tiagogregorio/tiagogregorio** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Estudante de Engenharia de Computação no Inatel.
 
-Here are some ideas to get you started:
+Minha trajetória inclui formação Técnica em Eletrônica, Gestão Financeira, MBA em Liderança e pós-graduação em Engenharia de Negócios, somando mais de 15 anos de experiência profissional.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Sou curioso e motivado para encontrar soluções para problemas.
+
+### 🛠️ Tecnologias e ferramentas
+
+**Linguagens de programação — formação acadêmica**
+- Python 
+- Java, C, C++
+- Assembly MIPS
+- HDL (VHDL)
+
+**Análise de dados**
+- NumPy, Pandas, Matplotlib
+
+**Banco de dados**
+- SQL, modelagem relacional
+
+**Sistemas embarcados e hardware**
+- Microcontroladores
+- Controladores PID, Lógica Difusa
+- Eletrônica analógica e digital
+- Projeto de PCB (Altium Designer)
+
+**Software e ferramentas**
+- Git, GitHub
+- Padrões de projeto, testes de software
+- Redes de computadores (TCP/IP)
+
+### 📫 Contato
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin)](https://linkedin.com/in/tiagorodriguesgregorio)
