@@ -3,6 +3,7 @@
 Estudante de Engenharia de Computação no Inatel.
 
 Minha trajetória inclui formação Técnica em Eletrônica, Gestão Financeira, MBA em Liderança e pós-graduação em Engenharia de Negócios, somando mais de 15 anos de experiência profissional.
+
 Sou curioso e motivado para encontrar soluções para problemas.
 
 ---
@@ -49,10 +50,13 @@ Sou curioso e motivado para encontrar soluções para problemas.
 
 ### 📊 GitHub Stats
 
-![Tiago's GitHub Stats](https://github-readme-stats.vercel.app/api?username=tiagogregorio&show_icons=true&theme=dark&hide_border=true&locale=pt-br)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tiagogregorio&layout=compact&theme=dark&hide_border=true&locale=pt-br)
+<p align="left">
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=tiagogregorio&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide_border=true" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tiagogregorio&layout=compact&theme=dark&hide_border=true" />
+</p>
 
 ---
 
 ### 📫 Contato
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/tiagorodriguesgregorio)
