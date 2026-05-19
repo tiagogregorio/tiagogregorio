@@ -1,9 +1,9 @@
 ## Olá, sou o Tiago 👋
 
-Estudante de Engenharia de Computação no INATEL (9º período).
-Minha trajetória une formação técnica em Eletrônica, Gestão Financeira,
-MBA em Liderança e pós-graduação em Engenharia de Negócios,
-somando 15+ anos de experiência profissional.
+Estudante de Engenharia de Computação no Inatel.
+
+Minha trajetória inclui formação Técnica em Eletrônica, Gestão Financeira, MBA em Liderança e pós-graduação em Engenharia de Negócios, somando mais de 15 anos de experiência profissional.
+Sou curioso e motivado para encontrar soluções para problemas.
 
 ---
 
@@ -15,8 +15,8 @@ somando 15+ anos de experiência profissional.
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
-![VHDL](https://img.shields.io/badge/VHDL-543978?style=flat&logoColor=white)
-![Assembly](https://img.shields.io/badge/Assembly_MIPS-6E4C13?style=flat&logoColor=white)
+![Assembly MIPS](https://img.shields.io/badge/Assembly_MIPS-6E4C13?style=flat&logoColor=white)
+![VHDL](https://img.shields.io/badge/HDL_VHDL-543978?style=flat&logoColor=white)
 
 **Análise de dados**
 
@@ -27,29 +27,30 @@ somando 15+ anos de experiência profissional.
 **Banco de dados**
 
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![Modelagem Relacional](https://img.shields.io/badge/Modelagem_Relacional-336791?style=flat&logo=postgresql&logoColor=white)
 
 **Sistemas embarcados e hardware**
 
-![Microcontroladores](https://img.shields.io/badge/Microcontroladores_(PIC,_8051)-00979D?style=flat&logoColor=white)
+![Microcontroladores](https://img.shields.io/badge/Microcontroladores-00979D?style=flat&logo=arduino&logoColor=white)
+![PID](https://img.shields.io/badge/Controladores_PID-007396?style=flat&logoColor=white)
+![Lógica Difusa](https://img.shields.io/badge/Lógica_Difusa-6A0DAD?style=flat&logoColor=white)
+![Eletrônica](https://img.shields.io/badge/Eletrônica_Analógica_e_Digital-FF6600?style=flat&logoColor=white)
 ![Altium](https://img.shields.io/badge/Altium_Designer-A5915F?style=flat&logo=altiumdesigner&logoColor=white)
 
-**Ferramentas**
+**Software e ferramentas**
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+![Padrões de Projeto](https://img.shields.io/badge/Padrões_de_Projeto-007ACC?style=flat&logoColor=white)
+![Testes](https://img.shields.io/badge/Testes_de_Software-25A162?style=flat&logoColor=white)
+![Redes](https://img.shields.io/badge/Redes_TCP/IP-0078D4?style=flat&logo=cisco&logoColor=white)
 
 ---
 
 ### 📊 GitHub Stats
 
-![Tiago's GitHub Stats](https://github-readme-stats.vercel.app/api?username=tiagogregorio&show_icons=true&theme=dark&hide_border=true)
-
----
-
-### 🎯 Áreas de interesse
-- Software
-- Hardware
-- Dados
+![Tiago's GitHub Stats](https://github-readme-stats.vercel.app/api?username=tiagogregorio&show_icons=true&theme=dark&hide_border=true&locale=pt-br)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tiagogregorio&layout=compact&theme=dark&hide_border=true&locale=pt-br)
 
 ---
 
