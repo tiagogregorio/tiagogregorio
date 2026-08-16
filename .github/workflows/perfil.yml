@@ -1,39 +1,49 @@
-name: Perfil - Cards e Cobrinha
+name: Perfil - Cards e Pac-Man
 
 on:
-  # Todo dia às 03:00 UTC (meia-noite em Brasília)
+  # Semanal (domingo, 03:00 UTC = meia-noite em Brasília).
+  # Diário gera ~2 commits automáticos por dia no seu histórico — semanal é mais limpo.
   schedule:
-    - cron: "0 3 * * *"
-  # Botão "Run workflow" na aba Actions
+    - cron: "0 3 * * 0"
   workflow_dispatch:
-  # Também roda a cada push na main
-  push:
-    branches:
-      - main
+
+# Sem "push: main" para evitar rodar o workflow inteiro a cada edição do README.
+# Use o botão "Run workflow" quando quiser atualizar na hora.
 
 jobs:
   # ---------------------------------------------------------------------------
-  # JOB 1 - Animação da cobrinha (nao precisa de token pessoal)
-  # Gera os arquivos na branch "output"
+  # JOB 1 — Animações do gráfico de contribuições (usa só o GITHUB_TOKEN padrão)
+  # Gera Pac-Man E cobrinha na MESMA pasta dist/ e publica tudo de uma vez.
+  # Importante: a action de publicação SUBSTITUI o conteúdo da branch "output".
+  # Se você publicar em dois passos separados, o segundo apaga o primeiro.
   # ---------------------------------------------------------------------------
-  cobrinha:
-    name: Gerar animacao da cobrinha
+  animacoes:
+    name: Gerar Pac-Man e cobrinha
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
 
     steps:
-      - name: Gerar os arquivos da cobrinha
+      - name: Gerar Pac-Man
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          # Outros jogos disponíveis: breakout, galaga, puzzle-bobble, bomberman, minesweeper
+          games: "pacman"
+          hide_month_labels: "false"
+
+      # Opcional: mantenha se ainda quiser a cobrinha junto do Pac-Man.
+      # Pode remover este passo inteiro se for usar só o Pac-Man.
+      - name: Gerar cobrinha
         uses: Platane/snk@v3
-        id: snake
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
-            dist/github-snake.gif?color_snake=#8b5cf6&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
 
-      - name: Publicar na branch output
+      - name: Publicar tudo na branch output
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
@@ -42,12 +52,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # ---------------------------------------------------------------------------
-  # JOB 2 - Cards de estatisticas (PRECISA do secret SUMMARY_GITHUB_TOKEN)
-  # Gera os arquivos na propria branch main
+  # JOB 2 — Cards de estatísticas (PRECISA do secret SUMMARY_GITHUB_TOKEN)
+  # O token deve ser fine-grained, somente leitura, e precisa ser renovado
+  # antes de expirar — se ele vencer, este job falha e os cards congelam.
   # ---------------------------------------------------------------------------
   cards:
     name: Gerar cards de estatisticas
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
 
@@ -62,7 +74,6 @@ jobs:
         with:
           USERNAME: ${{ github.repository_owner }}
           BRANCH_NAME: "main"
-          # -3 = horario de Brasilia
           UTC_OFFSET: -3
           EXCLUDE: ""
           AUTO_PUSH: true
