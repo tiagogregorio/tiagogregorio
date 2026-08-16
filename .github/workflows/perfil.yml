@@ -1,14 +1,24 @@
 name: Perfil - Cards e Animacao
 
 on:
+  # Semanal (domingo, 03:00 UTC = meia-noite em Brasilia)
   schedule:
     - cron: "0 3 * * 0"
+  # Botao "Run workflow" na aba Actions -- USE ESTE para testar agora
   workflow_dispatch:
+  # Reativado temporariamente: garante que o workflow rode ao salvar o arquivo.
+  # Depois que o Pac-Man estiver funcionando, voce pode remover este bloco.
   push:
     branches:
       - main
 
 jobs:
+  # ---------------------------------------------------------------------------
+  # JOB 1 - Animacoes do grafico de contribuicoes
+  # Gera Pac-Man E cobrinha na MESMA pasta dist/ e publica tudo de uma vez.
+  # A action de publicacao SUBSTITUI o conteudo da branch "output" -- se publicar
+  # em dois passos separados, o segundo apaga o primeiro.
+  # ---------------------------------------------------------------------------
   animacoes:
     name: Gerar Pac-Man e cobrinha
     runs-on: ubuntu-latest
@@ -32,6 +42,8 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
+      # Passo de diagnostico: mostra no log quais arquivos foram realmente gerados.
+      # Se "pacman-contribution-graph.svg" nao aparecer aqui, o problema esta na geracao.
       - name: Listar arquivos gerados
         run: ls -la dist/
 
@@ -43,6 +55,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+  # ---------------------------------------------------------------------------
+  # JOB 2 - Cards de estatisticas (PRECISA do secret SUMMARY_GITHUB_TOKEN)
+  # ---------------------------------------------------------------------------
   cards:
     name: Gerar cards de estatisticas
     runs-on: ubuntu-latest
