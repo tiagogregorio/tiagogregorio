@@ -1,0 +1,68 @@
+name: Perfil - Cards e Cobrinha
+
+on:
+  # Todo dia às 03:00 UTC (meia-noite em Brasília)
+  schedule:
+    - cron: "0 3 * * *"
+  # Botão "Run workflow" na aba Actions
+  workflow_dispatch:
+  # Também roda a cada push na main
+  push:
+    branches:
+      - main
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # JOB 1 - Animação da cobrinha (nao precisa de token pessoal)
+  # Gera os arquivos na branch "output"
+  # ---------------------------------------------------------------------------
+  cobrinha:
+    name: Gerar animacao da cobrinha
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Gerar os arquivos da cobrinha
+        uses: Platane/snk@v3
+        id: snake
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake.gif?color_snake=#8b5cf6&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
+
+      - name: Publicar na branch output
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # ---------------------------------------------------------------------------
+  # JOB 2 - Cards de estatisticas (PRECISA do secret SUMMARY_GITHUB_TOKEN)
+  # Gera os arquivos na propria branch main
+  # ---------------------------------------------------------------------------
+  cards:
+    name: Gerar cards de estatisticas
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout do repositorio
+        uses: actions/checkout@v4
+
+      - name: Gerar os cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: "main"
+          # -3 = horario de Brasilia
+          UTC_OFFSET: -3
+          EXCLUDE: ""
+          AUTO_PUSH: true
