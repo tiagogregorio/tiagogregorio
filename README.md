@@ -3,9 +3,13 @@
 **Engenharia de Dados | Machine Learning | Automação**
 *Construindo a ponte entre a visão estratégica de negócios e a eficiência técnica.*
 
-Sou estudante de Engenharia de Computação no Inatel (previsão de formatura em 2026) e trago uma bagagem sólida de mais de 15 anos de atuação nos setores financeiro e de eletrônica. Meu foco é desenvolver arquiteturas de dados e automações que resolvem gargalos operacionais e otimizam processos complexos.
+Estudante de Engenharia de Computação no Inatel.
 
-💡 **Meu diferencial:** Entendo a raiz do problema antes de escrever a primeira linha de código. Ao unir minha vivência em análise financeira e gestão com as melhores práticas de desenvolvimento de software, entrego soluções técnicas que conversam diretamente com as necessidades reais do negócio.
+Minha trajetória inclui formação Técnica em Eletrônica, Gestão Financeira, MBA em Liderança e pós-graduação em Engenharia de Negócios, somando mais de 15 anos de experiência profissional.
+
+Sou curioso e motivado para encontrar soluções para problemas.
+
+💡 **Meu diferencial:** Entendo a raiz do problema antes de escrever a primeira linha de código. Ao unir minha vivência em análise financeira e eletrônica com as melhores práticas de desenvolvimento de software, entrego soluções técnicas que conversam diretamente com as necessidades reais do negócio.
 
 ---
 
@@ -24,7 +28,7 @@ Sou estudante de Engenharia de Computação no Inatel (previsão de formatura em
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 
-**Fundamentos de Engenharia:** Redes TCP/IP, Padrões de Projeto, Testes de Software (Pytest), Microcontroladores e Sistemas Embarcados.
+**Fundamentos de Engenharia:** Redes TCP/IP, Padrões de Projeto, Testes de Software, Microcontroladores, Sistemas Embarcados e outros.
 
 ---
 
