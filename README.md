@@ -48,17 +48,18 @@ Sou curioso e motivado para encontrar soluções para problemas.
 
 ---
 
-### 📊 Estatísticas do GitHub
+### 📊 Estatísticas e Atividades
 
-<p align="left">
-  <img height="200" src="https://raw.githubusercontent.com/tiagogregorio/tiagogregorio/main/profile-summary-card-output/github_dark/3-stats.svg" alt="Estatísticas do GitHub" />
-  <img height="200" src="https://raw.githubusercontent.com/tiagogregorio/tiagogregorio/main/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Linguagens mais usadas nos repositórios" />
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tiagogregorio/tiagogregorio/output/github-snake-dark.svg" alt="Snake animation" width="100%" />
 </p>
 
-<p align="left">
+<p align="center">
   <img height="200" src="https://raw.githubusercontent.com/tiagogregorio/tiagogregorio/main/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Linguagens mais usadas nos commits" />
   <img height="200" src="https://raw.githubusercontent.com/tiagogregorio/tiagogregorio/main/profile-summary-card-output/github_dark/4-productive-time.svg" alt="Horários mais produtivos" />
 </p>
+
+---
 
 ---
 
