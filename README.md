@@ -8,6 +8,8 @@ Sou curioso e motivado para encontrar soluções para problemas.
 
 ---
 
+testeee
+
 ### 🛠️ Tecnologias e ferramentas
 
 **Linguagens de programação — formação acadêmica**
